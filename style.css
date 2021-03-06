@@ -1,0 +1,153 @@
+*{
+	margin:0;
+ 	padding: 0;
+ }
+
+@font-face {
+    font-family: 'little_cupcakesregular';
+    src: url('./fonts/little_cupcakes-webfont.woff2') format('woff2'),
+         url('./fonts/little_cupcakes-webfont.woff') format('woff'),
+         url('./fonts/Little Cupcakes.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+	font-family: 'arial';
+	font-size: 16px;
+}
+h1{
+	color: black;/*ceci est un commentaire*/
+	font-size: 20px; 
+	font-family: 'little_cupcakesregular';
+	
+}
+h2{
+	color: black;/*rgb(0,0,0) ou #000 */
+	font-size: 18px; 
+	font-family: 'Lobster', cursive;
+}
+h3{ 
+	color: black;
+	font-size: 16px;
+}
+a{
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	transition: ease 1s;
+}
+a:hover{
+	color: pink;
+}
+#hero{
+	background: url('./fond2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    padding-bottom: 1%;
+}
+nav{
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 20px;
+}
+
+#bandeau{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	background-color: rgba(255,255,255,0.5);
+}
+#contenu{
+	text-align: center;
+	padding: 3%;
+
+}
+#contenu a{
+	color: red; 
+	border: 1px solid red; 
+	border-radius: 15px;
+	padding: 20px;
+	transition: ease 1s;
+}
+#contenu a:hover{
+	color: white;
+	background-color: rgba(178,32,19,0.8);
+}
+#contenu img:hover{
+	transform: rotate(360deg) scale(1.5);
+}
+#contenu img{
+	transition: 0.2s;
+}
+#apropos{
+	display: flex;
+}
+#apropos_image img{
+	flex: 1;
+	max-width: 100%;
+}
+#apropos_image{
+	padding: 20px;
+	flex: 1;
+}
+#apropos_texte{
+	padding: 20px;
+	flex: 2;
+	text-align: justify;
+}
+#services{
+	display: flex;
+	background-color: #666;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+.services_item p{
+	text-align: justify;
+	padding: 20px;
+}
+@media screen and (max-width: 414px){
+	#apropos{
+	flex-direction: column; 
+	}/*ici, on referme la déclaration apropos*/
+
+#services{
+	flex-direction: column;
+
+	}/*ici on referme la declaration #services*/
+}/*ici, on referme la media query*/
+footer{
+	display: flex;
+	justify-content: center;
+}
+footer a{
+	color: gray;
+}
+footer a: hover{
+	color: #e74c3c;
+}
+
+.social{
+	padding: 20px;
+}
+
+.modal{
+	position: fixed;
+	left: 0; /*sans marge à gauche*/
+	top: 0;/* sans marge en haut*/
+	background-color: rgba(243,235,72,0.76);	
+	height: 100%;/*pleine hauteur*/ 
+	width: 100%;/*pleine largeur*/
+	z-index: 1;/*se place au-dessus*/
+}
+/*Le Bloc Central*/
+.modalBloc{
+	margin: 10% auto; 
+	padding: 20px;
+	width: 50%;
+	text-align: center;
+	background-color: white;
+	color: black; 
+	border-top: 10px solid black;
+}
