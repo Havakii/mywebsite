@@ -107,16 +107,30 @@ nav{
 	text-align: justify;
 	padding: 20px;
 }
+
 @media screen and (max-width: 414px){
 	#apropos{
 	flex-direction: column; 
 	}/*ici, on referme la déclaration apropos*/
+	#services{
+	flex-direction: column;
+	}
+}
+	.modalTextTitle{
+		font-size: 40px;
+}
+	.modalBtn a{
+		display: block;
+		margin-bottom: 5%;
+}
+
 
 #services{
 	flex-direction: column;
 
 	}/*ici on referme la declaration #services*/
 }/*ici, on referme la media query*/
+
 footer{
 	display: flex;
 	justify-content: center;
@@ -131,8 +145,9 @@ footer a: hover{
 .social{
 	padding: 20px;
 }
-
+/*Le modal*/
 .modal{
+	display: none;
 	position: fixed;
 	left: 0; /*sans marge à gauche*/
 	top: 0;/* sans marge en haut*/
@@ -140,6 +155,8 @@ footer a: hover{
 	height: 100%;/*pleine hauteur*/ 
 	width: 100%;/*pleine largeur*/
 	z-index: 1;/*se place au-dessus*/
+	/*Pour pouvoir faire defiler le contenu*/
+	overflow: auto;
 }
 /*Le Bloc Central*/
 .modalBloc{
@@ -150,4 +167,25 @@ footer a: hover{
 	background-color: white;
 	color: black; 
 	border-top: 10px solid black;
+}
+.modalBtn{
+	margin: 5%;
+}
+.modalBtn a{
+	color: white;
+	background-color: black; 
+}
+.modalBtn a:hover{
+	opacity: 0.7; 
+}
+
+.modalTextTitle{
+	font-size: 60px; 
+	font-family: 'Lobster', cursive;
+}
+.modalTextSubtitle{
+	font-size: 20px;
+}
+.modalText img{
+	width: 60%;
 }
