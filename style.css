@@ -114,22 +114,17 @@ nav{
 	}/*ici, on referme la déclaration apropos*/
 	#services{
 	flex-direction: column;
-	}
-}
-	.modalTextTitle{
+
+	}/*ici on referme la declaration #services*/
+}/*ici, on referme la media query*/
+
+.modalTextTitle{
 		font-size: 40px;
 }
 	.modalBtn a{
 		display: block;
 		margin-bottom: 5%;
 }
-
-
-#services{
-	flex-direction: column;
-
-	}/*ici on referme la declaration #services*/
-}/*ici, on referme la media query*/
 
 footer{
 	display: flex;
