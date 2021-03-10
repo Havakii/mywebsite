@@ -19,66 +19,68 @@ html{
 }
 h1{
 	color: black;/*ceci est un commentaire*/
-	font-size: 20px; 
-	font-family: 'little_cupcakesregular';
+	font-size: 28px; 
+	font-family: 'Lobster';
+	padding: 20px;
 	
 }
-h2{
-	color: black;/*rgb(0,0,0) ou #000 */
-	font-size: 18px; 
-	font-family: 'Lobster', cursive;
-}
-h3{ 
-	color: black;
-	font-size: 16px;
-}
+
 a{
-	color: white;
+	color: black;
 	text-decoration: none;
-	padding: 20px;
+	padding: 10px;
+	font-size: 20px;
+	font-family: 'arial';
 	transition: ease 1s;
 }
 a:hover{
-	color: pink;
+	color: #AC6F6F;
 }
+
 #hero{
 	background: url('./fond2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
     padding-bottom: 1%;
+
 }
 nav{
-	background-color: rgba(0,0,0,0.5);
-	text-align: center;
-	padding: 20px;
+	background-color: white;
+	text-align: left;
+	padding: 10px;
 }
 
 #bandeau{
-	margin-top: 5%;
-	margin-bottom: 5%;
-	background-color: rgba(255,255,255,0.5);
+	margin-top: 7%;
+	margin-bottom: 7%;
+	background-color: rgba(255,255,255,0.5)
 }
 #contenu{
 	text-align: center;
-	padding: 3%;
+	padding: 7%;
+
+	
+
 
 }
-#contenu a{
-	color: red; 
-	border: 1px solid red; 
+/*#contenu a{
+	color: black; 
+	border: 1px solid black; 
 	border-radius: 15px;
 	padding: 20px;
 	transition: ease 1s;
 }
 #contenu a:hover{
 	color: white;
-	background-color: rgba(178,32,19,0.8);
-}
+	border: 1px solid white;
+	background-color: rgba(172,111,111,0.8);*/
+
 #contenu img:hover{
 	transform: rotate(360deg) scale(1.5);
 }
 #contenu img{
 	transition: 0.2s;
+
 }
 #apropos{
 	display: flex;
@@ -103,10 +105,12 @@ nav{
 	padding: 20px;
 	text-align: center;
 }
+
 .services_item p{
 	text-align: justify;
 	padding: 20px;
 }
+
 
 @media screen and (max-width: 414px){
 	#apropos{
