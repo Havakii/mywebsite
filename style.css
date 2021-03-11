@@ -50,6 +50,7 @@ nav{
 	padding: 10px;
 }
 
+
 #bandeau{
 	margin-top: 7%;
 	margin-bottom: 7%;
@@ -95,6 +96,9 @@ nav{
 }
 #apropos_texte{
 	padding: 20px;
+	margin-top: 3%;
+	font-size: 20px;
+	font-family: 'Fjalla One', sans-serif;
 	flex: 2;
 	text-align: justify;
 }
@@ -104,11 +108,13 @@ nav{
 	color: white;
 	padding: 20px;
 	text-align: center;
+	font-size: 18px;
+	font-family: 'Abel', sans-serif;
 }
 
 .services_item p{
 	text-align: justify;
-	padding: 20px;
+	padding: 40px;
 }
 
 
